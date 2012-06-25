@@ -1,3 +1,25 @@
 body {
-    padding-top: 60px;
+    padding-top: 30px;
+}
+
+.rows p {
+    font-size: 14px;
+}
+
+h2:before {
+    content: url("images/cafe.png");
+    vertical-align: bottom;
+    line-height: 1.0;
+    padding-right: 5px;
+}
+
+h3:before {
+    content: "\00BB" ;
+    padding-right: 5px;
+}
+
+footer {
+    margin-top: 15px;
+    color: #a0a0a0;
+    text-align:center;
 }

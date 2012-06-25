@@ -3,44 +3,155 @@
   <head>
     <meta content="text/thml; charset=utf-8" http-equiv="content" />
     <meta content="text/css" name="content-style-type" />
+    <meta name="description" content="名古屋を中心に活動する定理証明器・関数型言語のコミュニティ">
+    <meta name="keywords" content="関数型言語,定理証明器,名古屋,証明,Coq,OCaml">
     <link href="./bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="./style.css" media="screen" rel="stylesheet" type="text/css" />
-    <title>ProofCafe</title>
+    <title>ProofCafe - 名古屋を中心に活動する定理証明器・関数型言語のコミュニティ</title>
   </head>
   <body>
     <div class="container">
       <div class="hero-unit">
         <h1>ProofCafe</h1>
-        <p>ProofCafeは名古屋を中心に</p>
+        <p>ProofCafeは名古屋を中心に活動する定理証明器・関数型言語のコミュニティです。</p>
+        <p>
+          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+        </p>
       </div>
-      <div class="news">
+
+      <div class="news alert alert-info">
+        <h2>おしらせ</h2>
+        <p>
+          今年も9/2(日)に<a href="https://groups.google.com/group/fm-forum">Formal Method Forum</a>と合同での定理証明器イベントを計画しています。
+          前日の<a href="http://partake.in/events/9a5f18bf-ca0c-48cd-a050-8a564c1ab0d9">函数プログラミングの集い 2012 in Tokyo</a>と併せてご参加ください!
+        </p>
       </div>
-      <div class="rows">
+      <div class="row">
         <div class="span4">
           <h2>開催勉強会</h2>
-          <dl>
-            <dt><a href="/wiki/">ProofCafe</a></dt>
-            <dd>
-              ProofCafeはCoqを用いたプログラムの証明について勉強する勉強会
-              です。現在は<a href="http://proofcafe.org/sf/">ソフトウェ
-              アの基礎</a>というドキュメントを読んでいます。コーヒーを
-              飲みながら楽しく証明しましょう。
-            </dd>
-            <dt> <a href="/tapl/">TAPL-nagoya</a></dt>
-            <dt><a href="/instiki/kctnagoya">けんろん！(休日カフェタイム, KCTNagoya)</a></dt>
-            <dt><a href="/doehas/">どえりゃあ Haskell (Curry-ya Haskell)</a></dt>
-          </dl>
+          <p>
+            ProofCafeではいくつかの勉強会を定期開催しています。
+            詳細は個別のページをご覧ください。
+          </p>
+          <h3><a href="http://proofcafe.org/wiki/">ProofCafe</a></h3>
+          <p>
+            Coqを用いたプログラムの証明について勉強する勉強会です。
+            コーヒーを飲みながら楽しく証明しましょう。
+          </p>
+
+          <h3> <a href="http://proofcafe.org/tapl/">TAPL-nagoya</a></h3>
+          <p>
+            <a href="http://www.amazon.co.jp/dp/0262162091">Types
+              and Programming Laungages</a>(通称TAPL)の読書会です。
+            ScalaやF#などの静的型付け言語の基礎になっている型理論について学びます。
+          </p>
+
+          <h3><a href="http://proofcafe.org/instiki/kctnagoya">休日カフェタイム, KCTNagoya</a></h3>
+          <p>圏論に関する勉強会です。</p>
+
+          <h3><a href="http://proofcafe.org/doehas/">どえりゃあ Haskell</a></h3>
+          <p>Haskellに関する勉強会です。</p>
         </div>
+
+        <div class="span4">
+          <h2>サービス</h2>
+          <h3><a href="http://proofcafe.org/sf/">Software Foundations</a>(和訳)</h3>
+          <p>Benjamin C. Pierce氏による同名のテキストの和訳です。関数プ
+            ログラミグやラムダ計算についてCoqによる実例を交えながら丁寧
+            に説明されています。</p>
+          <h3><a href="http://proofcafe.org/cochin/">Cochin</a></h3>
+          <p>Coqの定理検索サービスです。</p>
+
+          <h3><a href="calcoq/">CalCoq</a></h3>
+          <p>Coqによる任意精度の計算機です。</p>
+
+          <h3><a href="http://proofcafe.org/k27c8/math/">数理大好き</a></h3>
+          <p>数学についてのいくつかのトピックに関する解説です。</p>
+        </div>
+
         <div class="span4">
           <h2>成果物</h2>
+          <h3>Coq Extraction機能の拡張</h3>
+          <p>
+            <a href="http://coq.inria.fr">Coq</a>のExtraction機能を拡張し、他言語への変換をサポートします。
+          </p>
+          <ul>
+            <li><a href="http://proofcafe.org/wiki/Coq2Scala">Coq to Scala</a></li>
+            <li><a href="http://github.com/mzp/coq-ruby">Coq to Ruby</a></li>
+            <li><a href="http://patch-tag.com/r/leque/coq-clojure-ext/home">Coq to Clojure</a></li>
+          </ul>
+          <h3><a href="http://proofcafe.org/wiki/ocamltter">OCamltter</a></h3>
+          <p>
+            ターミナルで動作するTwitterクライアントです。一部がCoqにより証明されています。
+          </p>
+          <h3><a href="http://www.msgpack.org">Msgpack for OCaml</a></h3>
+          <p>
+            Msgpackは軽量・高速を特徴とするオブジェクトシリアライザです。
+            Coqにより変換の正しさが証明されています。
+          </p>
+          <h3><a href="https://play.google.com/store/apps/details?id=jp.co.itpl.ocamlandroid">OCaml Toplevel on Android</a></h3>
+          <p>
+            OCamlの対話環境をAndroidに移植したものです。
+          </p>
         </div>
-        <div class="span3">
+      </div>
+      <div class="row">
+        <div class="span4">
+          <h2>過去のイベント</h2>
+          <ul>
+            <li><a href="http://partake.in/events/f04706e0-0eac-4751-901f-41707bdfb1ef">スタートSML#</a>(2012/03/25)</li>
+            <li><a href="http://partake.in/events/ac41261d-6026-4d09-8814-5ad3e58446e8">ProofSummit</a>(2011/09/25)</li>
+            <li><a href="http://atnd.org/events/9238">Coq Party</a>(2010/11/27)</li>
+            <li><a href="http://atnd.org/events/6022">Coq庵</a>(2010/08/29)</li>
+            <li><a href="http://atnd.org/events/7945">名古屋Hackathon(ラムダ村)</a>(2010/10/09)</li>
+          </ul>
+        </div>
+
+        <div class="span4">
           <h2>リンク</h2>
           <ul>
-            <li><a href="http://www.itpl.co.jp/ocaml-nagoya">ocaml-nagoya</a></li>
+            <li><a href="http://github.com/ProofCafe">github</a></li>
+            <li><a href="http://www.itpl.co.jp/ocaml-nagoya/">ocaml-nagoya</a></li>
+            <li><a href="https://groups.google.com/group/fm-forum">Formal Method Forum</a>(東京)</li>
+            <li><a href="/ad.html">広告</a></li>
           </ul>
         </div>
       </div>
+
     </div>
+
+    <!-- Google Adsense -->
+    <script type="text/javascript"><!--
+                                       google_ad_client = "ca-pub-3545276391244796";
+                                       /* proofcafe */
+                                       google_ad_slot = "2838182757";
+                                       google_ad_width = 728;
+                                       google_ad_height = 15;
+                                       //-->
+    </script>
+    <script type="text/javascript"
+            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+
+
+    <footer>
+      <p>
+        Copyright &copyright; 2010-2012 ProofCafe
+      </p>
+    </footer>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-6143321-8']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <!-- Google Analytics -->
   </body>
 </html>
